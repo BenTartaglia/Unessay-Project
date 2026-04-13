@@ -1,0 +1,551 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oil, Power, and Everyday Life</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f6f8fb;
+      color: #16202a;
+      line-height: 1.5;
+    }
+    .page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px 28px 56px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #ffffff 0%, #eef3fb 100%);
+      border: 1px solid rgba(15,76,129,0.12);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 10px 28px rgba(15,76,129,0.08);
+      margin-bottom: 24px;
+    }
+    .eyebrow {
+      color: #0F4C81;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+    h1 {
+      margin: 0 0 10px 0;
+      font-size: 38px;
+      color: #0F4C81;
+    }
+    .subtitle {
+      font-size: 18px;
+      color: #334155;
+      max-width: 900px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 22px 0 28px;
+    }
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 18px;
+      border: 1px solid rgba(15,76,129,0.10);
+      box-shadow: 0 6px 18px rgba(15,76,129,0.06);
+    }
+    .card h2 {
+      margin: 0 0 8px 0;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      color: #0F4C81;
+    }
+    .big {
+      font-size: 28px;
+      font-weight: 800;
+      color: #0F4C81;
+      margin: 4px 0 6px;
+    }
+    .section {
+      margin-top: 24px;
+    }
+    .section h2 {
+      color: #0F4C81;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+    .event-card {
+      background: white;
+      border-radius: 18px;
+      padding: 18px;
+      border: 1px solid rgba(15,76,129,0.10);
+      box-shadow: 0 6px 18px rgba(15,76,129,0.06);
+      margin-bottom: 14px;
+    }
+    .event-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+    .year {
+      font-weight: 800;
+      color: #C17C00;
+      font-size: 18px;
+    }
+    .lesson {
+      color: #64748b;
+      font-size: 13px;
+    }
+    .event-card h3 {
+      margin: 0 0 12px 0;
+      color: #172554;
+      font-size: 22px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .mini-head {
+      font-weight: 700;
+      color: #0F4C81;
+      margin-bottom: 4px;
+    }
+    .price-panel {
+      background: white;
+      border-radius: 18px;
+      padding: 20px;
+      border: 1px solid rgba(15,76,129,0.10);
+      box-shadow: 0 6px 18px rgba(15,76,129,0.06);
+    }
+    .price-row {
+      display: grid;
+      grid-template-columns: 80px 1fr 90px 160px;
+      gap: 12px;
+      align-items: center;
+      margin: 12px 0;
+    }
+    .price-year {
+      font-weight: 700;
+      color: #1e293b;
+    }
+    .bar-wrap {
+      width: 100%;
+      height: 16px;
+      background: #e8eef7;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .bar {
+      height: 100%;
+      background: linear-gradient(90deg, #0F4C81 0%, #4f88c6 100%);
+      border-radius: 999px;
+    }
+    .price-label {
+      font-weight: 700;
+      color: #0F4C81;
+    }
+    .price-note {
+      color: #64748b;
+      font-size: 14px;
+    }
+    .synthesis {
+      background: #0F4C81;
+      color: white;
+      border-radius: 20px;
+      padding: 22px 24px;
+      margin-top: 26px;
+    }
+    .synthesis h2 {
+      color: white;
+      margin-top: 0;
+    }
+    .foot {
+      color: #64748b;
+      font-size: 13px;
+      margin-top: 18px;
+    }
+    @media (max-width: 900px) {
+      .cards, .grid-3 {
+        grid-template-columns: 1fr;
+      }
+      .price-row {
+        grid-template-columns: 70px 1fr;
+      }
+      .price-label, .price-note {
+        grid-column: 2;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="hero">
+      <div class="eyebrow">Unessay Artifact • Python-based data storytelling</div>
+      <h1>Oil, Power, and Everyday Life</h1>
+      <div class="subtitle">
+        This artifact argues that major turning points in oil history repeatedly reshaped the
+        global economy, political power, and the daily lives of private citizens. Across the course,
+        oil never acted as “just fuel.” It functioned as a strategic resource, a financial commodity,
+        a source of sovereignty, and a driver of inflation, mobility, and environmental debate.
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h2>Core pattern</h2>
+        <div class="big">Shock → adaptation</div>
+        <div>Each crisis pushed markets, governments, and consumers to adjust through new policy, new supply, or new technology.</div>
+      </div>
+      <div class="card">
+        <h2>Political lesson</h2>
+        <div class="big">Oil shifted power</div>
+        <div>Control over oil changed the position of states, companies, and alliances from the early concessions era through OPEC and beyond.</div>
+      </div>
+      <div class="card">
+        <h2>Daily life lesson</h2>
+        <div class="big">Consumers felt it directly</div>
+        <div>Gas lines, inflation, transport costs, suburban lifestyles, efficiency standards, and energy anxiety all tied private life to global oil history.</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Major Course Turning Points</h2>
+      
+    <div class="event-card">
+        <div class="event-top">
+            <div class="year">1859</div>
+            <div class="lesson">Lessons 1–2 / The Prize</div>
+        </div>
+        <h3>Pennsylvania oil begins the modern industry</h3>
+        <div class="grid-3">
+            <div>
+                <div class="mini-head">Global economy</div>
+                <p>Oil became a scalable commercial product and laid the foundation for a modern energy market.</p>
+            </div>
+            <div>
+                <div class="mini-head">Political dynamics</div>
+                <p>Control over production, transport, and refining quickly became a source of power.</p>
+            </div>
+            <div>
+                <div class="mini-head">Everyday life</div>
+                <p>Kerosene changed illumination and everyday household life.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="event-card">
+        <div class="event-top">
+            <div class="year">1901</div>
+            <div class="lesson">Early course / The Prize</div>
+        </div>
+        <h3>Spindletop and the age of abundance</h3>
+        <div class="grid-3">
+            <div>
+                <div class="mini-head">Global economy</div>
+                <p>Massive production lowered costs and accelerated industrial expansion.</p>
+            </div>
+            <div>
+                <div class="mini-head">Political dynamics</div>
+                <p>Texas rose as a major oil center and shifted the American balance of oil power.</p>
+            </div>
+            <div>
+                <div class="mini-head">Everyday life</div>
+                <p>Cheap oil expanded mobility and helped fuel the transition toward automobile society.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="event-card">
+        <div class="event-top">
+            <div class="year">1951</div>
+            <div class="lesson">Lessons 5–7 / The Prize</div>
+        </div>
+        <h3>Iranian oil nationalization</h3>
+        <div class="grid-3">
+            <div>
+                <div class="mini-head">Global economy</div>
+                <p>The conflict showed how resource control could disrupt contracts, production, and global confidence.</p>
+            </div>
+            <div>
+                <div class="mini-head">Political dynamics</div>
+                <p>Oil became a symbol of sovereignty and anti-colonial power.</p>
+            </div>
+            <div>
+                <div class="mini-head">Everyday life</div>
+                <p>The effects were not just local; instability in producing regions affected consumers elsewhere.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="event-card">
+        <div class="event-top">
+            <div class="year">1956</div>
+            <div class="lesson">Lessons 6–7 / The Prize</div>
+        </div>
+        <h3>Suez Crisis</h3>
+        <div class="grid-3">
+            <div>
+                <div class="mini-head">Global economy</div>
+                <p>The crisis exposed how vulnerable oil transportation routes were to disruption.</p>
+            </div>
+            <div>
+                <div class="mini-head">Political dynamics</div>
+                <p>It marked a major shift in global influence and highlighted the strategic importance of chokepoints.</p>
+            </div>
+            <div>
+                <div class="mini-head">Everyday life</div>
+                <p>It showed that distant geopolitical conflicts could quickly shape energy security.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="event-card">
+        <div class="event-top">
+            <div class="year">1973</div>
+            <div class="lesson">Lesson 9 / The Prize</div>
+        </div>
+        <h3>First Oil Shock</h3>
+        <div class="grid-3">
+            <div>
+                <div class="mini-head">Global economy</div>
+                <p>Production cutbacks and embargoes drove inflation, recession pressure, and a new age of shortage.</p>
+            </div>
+            <div>
+                <div class="mini-head">Political dynamics</div>
+                <p>Oil became an explicit geopolitical weapon.</p>
+            </div>
+            <div>
+                <div class="mini-head">Everyday life</div>
+                <p>Gas lines, panic buying, and rising fuel costs made the crisis highly personal.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="event-card">
+        <div class="event-top">
+            <div class="year">1979</div>
+            <div class="lesson">Lesson 10 / The Prize</div>
+        </div>
+        <h3>Second Oil Shock and Iranian Revolution</h3>
+        <div class="grid-3">
+            <div>
+                <div class="mini-head">Global economy</div>
+                <p>Fear, stockpiling, and policy confusion intensified price spikes.</p>
+            </div>
+            <div>
+                <div class="mini-head">Political dynamics</div>
+                <p>A domestic upheaval in Iran became a global oil crisis.</p>
+            </div>
+            <div>
+                <div class="mini-head">Everyday life</div>
+                <p>Consumers again faced gas lines, uncertainty, and higher prices.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="event-card">
+        <div class="event-top">
+            <div class="year">1986</div>
+            <div class="lesson">Lesson 11 / The Prize and The Quest</div>
+        </div>
+        <h3>Third Oil Shock: price collapse</h3>
+        <div class="grid-3">
+            <div>
+                <div class="mini-head">Global economy</div>
+                <p>Oversupply and weak demand pushed prices sharply downward, hurting exporters.</p>
+            </div>
+            <div>
+                <div class="mini-head">Political dynamics</div>
+                <p>Low prices shifted leverage toward importing nations.</p>
+            </div>
+            <div>
+                <div class="mini-head">Everyday life</div>
+                <p>Consumers benefited from cheaper energy, but producers and oil-dependent economies suffered.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="event-card">
+        <div class="event-top">
+            <div class="year">1990–1991</div>
+            <div class="lesson">Lesson 11 / The Prize</div>
+        </div>
+        <h3>Gulf Crisis and market correction</h3>
+        <div class="grid-3">
+            <div>
+                <div class="mini-head">Global economy</div>
+                <p>Prices spiked on fear, then fell rapidly as the market adjusted and the SPR helped calm expectations.</p>
+            </div>
+            <div>
+                <div class="mini-head">Political dynamics</div>
+                <p>The war showed that oil remained central to global security and coalition politics.</p>
+            </div>
+            <div>
+                <div class="mini-head">Everyday life</div>
+                <p>The lesson was that fear itself can move markets before actual shortage fully develops.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="event-card">
+        <div class="event-top">
+            <div class="year">2003–2008</div>
+            <div class="lesson">Epilogue / The Quest</div>
+        </div>
+        <h3>New oil shock and demand surge</h3>
+        <div class="grid-3">
+            <div>
+                <div class="mini-head">Global economy</div>
+                <p>Strong demand, supply constraints, geopolitics, costs, and financial flows pushed prices sharply higher.</p>
+            </div>
+            <div>
+                <div class="mini-head">Political dynamics</div>
+                <p>Oil remained tied to national strategy, especially in the Middle East and emerging economies.</p>
+            </div>
+            <div>
+                <div class="mini-head">Everyday life</div>
+                <p>High prices again transferred costs to ordinary consumers through transport and household expenses.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="event-card">
+        <div class="event-top">
+            <div class="year">Contemporary Era</div>
+            <div class="lesson">Lesson 12 / The Quest</div>
+        </div>
+        <h3>Unconventional energy, natural gas, and climate policy</h3>
+        <div class="grid-3">
+            <div>
+                <div class="mini-head">Global economy</div>
+                <p>Technology expanded recoverable energy and changed what counted as economically available supply.</p>
+            </div>
+            <div>
+                <div class="mini-head">Political dynamics</div>
+                <p>Energy security, Russian gas leverage, and carbon policy became major strategic issues.</p>
+            </div>
+            <div>
+                <div class="mini-head">Everyday life</div>
+                <p>The future of energy became a question of balancing affordability, security, and sustainability.</p>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+
+    <div class="section">
+      <h2>Illustrative Price Shock Story</h2>
+      <div class="price-panel">
+        <p>
+          These benchmark figures come directly from course material emphasized in the lessons.
+          They show that oil history is not a smooth upward march. It is a sequence of shocks,
+          panics, collapses, and corrections shaped by geopolitics, expectations, and market structure.
+        </p>
+        
+    <div class="price-row">
+        <div class="price-year">1973</div>
+        <div class="bar-wrap">
+            <div class="bar" style="width:8%"></div>
+        </div>
+        <div class="price-label">$11.64</div>
+        <div class="price-note">First shock</div>
+    </div>
+    
+    <div class="price-row">
+        <div class="price-year">1979</div>
+        <div class="bar-wrap">
+            <div class="bar" style="width:23%"></div>
+        </div>
+        <div class="price-label">$34</div>
+        <div class="price-note">Second shock</div>
+    </div>
+    
+    <div class="price-row">
+        <div class="price-year">1985</div>
+        <div class="bar-wrap">
+            <div class="bar" style="width:22%"></div>
+        </div>
+        <div class="price-label">$31.75</div>
+        <div class="price-note">Pre-collapse</div>
+    </div>
+    
+    <div class="price-row">
+        <div class="price-year">1986</div>
+        <div class="bar-wrap">
+            <div class="bar" style="width:7%"></div>
+        </div>
+        <div class="price-label">$10</div>
+        <div class="price-note">Third shock</div>
+    </div>
+    
+    <div class="price-row">
+        <div class="price-year">1990</div>
+        <div class="bar-wrap">
+            <div class="bar" style="width:28%"></div>
+        </div>
+        <div class="price-label">$40</div>
+        <div class="price-note">Gulf spike</div>
+    </div>
+    
+    <div class="price-row">
+        <div class="price-year">1991</div>
+        <div class="bar-wrap">
+            <div class="bar" style="width:14%"></div>
+        </div>
+        <div class="price-label">$20</div>
+        <div class="price-note">Post-war correction</div>
+    </div>
+    
+    <div class="price-row">
+        <div class="price-year">2003</div>
+        <div class="bar-wrap">
+            <div class="bar" style="width:21%"></div>
+        </div>
+        <div class="price-label">$30</div>
+        <div class="price-note">New shock begins</div>
+    </div>
+    
+    <div class="price-row">
+        <div class="price-year">2008</div>
+        <div class="bar-wrap">
+            <div class="bar" style="width:100%"></div>
+        </div>
+        <div class="price-label">$145+</div>
+        <div class="price-note">Peak before recession</div>
+    </div>
+    
+      </div>
+    </div>
+
+    <div class="synthesis">
+      <h2>Final Synthesis</h2>
+      <p>
+        Over the semester, the course showed that the history of oil is really the history of
+        modern power. Oil influenced war strategy, national sovereignty, inflation, market structure,
+        consumer behavior, and climate policy. Fears of “running out” repeatedly appeared, but the
+        course also emphasized that reserves are a moving target shaped by technology, price, and access.
+        In the final lessons, unconventional oil, natural gas, and carbon markets added a new dimension:
+        the future of energy is not simply about replacing oil, but about balancing security, affordability,
+        environmental cost, and technological change.
+      </p>
+      <p>
+        The central takeaway is that oil’s importance has persisted because it sits at the intersection
+        of economics, politics, infrastructure, and everyday life. That is why the subject remained
+        relevant from Pennsylvania in 1859 to OPEC, the Gulf War, unconventional energy, and the
+        climate-era debates covered at the end of the course.
+      </p>
+    </div>
+
+    <div class="foot">
+      Built with Python to create a static HTML artifact for my Unessay project.
+    </div>
+  </div>
+</body>
+</html>
