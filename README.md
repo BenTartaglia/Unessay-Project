@@ -1,4 +1,3 @@
-```markdown
 # Oil Unessay Artifact Repository
 
 This repository contains the two main files for my course Unessay project on the historical impact of oil on the global economy, political systems, and everyday life.
@@ -14,4 +13,3 @@ This repository contains the two main files for my course Unessay project on the
 I created this repository as a simple way to store, organize, and access both the source Python file and the finished HTML artifact in one place (Both files are located above, to view the Artifact: download the raw HTML file and open it in a new browser). It also makes the project easy to share, revisit, and reference as part of the Unessay submission.
 ```
 
-This is **perfectly appropriate for a small academic artifact repository** and keeps it straightforward.
