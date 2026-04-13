@@ -11,5 +11,5 @@ This repository contains the two main files for my course Unessay project on the
 
 ## Purpose
 I created this repository as a simple way to store, organize, and access both the source Python file and the finished HTML artifact in one place (Both files are located above, to view the Artifact: download the raw HTML file and open it in a new browser). It also makes the project easy to share, revisit, and reference as part of the Unessay submission.
-```
+
 
