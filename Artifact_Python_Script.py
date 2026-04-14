@@ -1,15 +1,10 @@
 
 """
-Simple Python artifact generator for the Unessay project.
-
 Run:
-    python3 oil_unessay_artifact_simple.py
+    python3 Artifact_Python_Script.py
 
 Output:
-    oil_unessay_artifact.html
-
-This version avoids Streamlit and creates a polished static HTML artifact
-using only Python's standard library.
+    Unessay_artifact.html
 """
 
 from pathlib import Path
@@ -413,9 +408,7 @@ html = f"""
     </div>
 
     <div class="foot">
-      Built with standard Python to create a static HTML artifact for the Unessay project.
-      Intended submission format: screenshot this artifact or open the HTML file in a browser and
-      record a short walkthrough.
+      Built with Python to create a static HTML artifact for the Unessay project.
     </div>
   </div>
 </body>
